@@ -1,6 +1,6 @@
 # HTTP Snippet [![version][npm-version]][npm-url] [![License][npm-license]][license-url]
 
-HTTP Request snippet generator for *many* languages & tools including: `cURL`, `HTTPie`, `Javascript`, `Node`, `C`, `Java`, `PHP`, `Objective-C`, `Swift`, `Python`, `Ruby`, `C#`, `Go`, `OCaml` and [more](https://github.com/Mashape/httpsnippet/wiki/Targets)!
+> HTTP Request snippet generator for *many* languages & tools including: `cURL`, `HTTPie`, `Javascript`, `Node`, `C`, `Java`, `PHP`, `Objective-C`, `Swift`, `Python`, `Ruby`, `C#`, `Go`, `OCaml` and [more](https://github.com/Mashape/httpsnippet/wiki/Targets)!
 
 Relies on the popular [HAR](http://www.softwareishard.com/blog/har-12-spec/#request) format to import data and describe HTTP calls.
 
@@ -11,6 +11,7 @@ See it in action on companion service: [APIembed](https://apiembed.com/)
 [![Code Climate][codeclimate-quality]][codeclimate-url]
 [![Coverage Status][codeclimate-coverage]][codeclimate-url]
 [![Dependencies][david-image]][david-url]
+[![Gitter][gitter-image]][gitter-url]
 
 ## Install
 
@@ -35,7 +36,6 @@ npm install --save httpsnippet
     -t, --target <target>     target output
     -c, --client [client]     target client library
     -o, --output <directory>  write output to directory
-    -n, --output-name <name>  output file name
 
 ```
 
@@ -213,3 +213,6 @@ For more information on SemVer, please visit <http://semver.org/>.
 
 [david-url]: https://david-dm.org/Mashape/httpsnippet
 [david-image]: https://img.shields.io/david/Mashape/httpsnippet.svg?style=flat-square
+
+[gitter-url]: https://gitter.im/Mashape/httpsnippet
+[gitter-image]: https://img.shields.io/badge/Gitter-Join%20Chat-blue.svg?style=flat-square

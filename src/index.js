@@ -11,7 +11,7 @@ var util = require('util')
 var validate = require('har-validator-fsless')
 
 // constructor
-var HTTPSnippet = function (data, lang) {
+var HTTPSnippet = function (data) {
   var entries
   var self = this
   var input = util._extend({}, data)
@@ -28,7 +28,7 @@ var HTTPSnippet = function (data, lang) {
     }]
   }
 
-  entries.map(function (entry) {
+  entries.forEach(function (entry) {
     // add optional properties to make validation successful
     entry.request.httpVersion = entry.request.httpVersion || 'HTTP/1.1'
     entry.request.queryString = entry.request.queryString || []
@@ -43,8 +43,6 @@ var HTTPSnippet = function (data, lang) {
 
     validate.request(entry.request, function (err, valid) {
       if (!valid) {
-        debug(err)
-
         throw err
       }
 
@@ -110,7 +108,7 @@ HTTPSnippet.prototype.prepare = function (request) {
         // easter egg
         form._boundary = '---011000010111000001101001'
 
-        request.postData.params.map(function (param) {
+        request.postData.params.forEach(function (param) {
           form.append(param.name, param.value || '', {
             filename: param.fileName || null,
             contentType: param.contentType || null
@@ -197,7 +195,7 @@ HTTPSnippet.prototype.convert = function (target, client, opts) {
 
   if (func) {
     var results = this.requests.map(function (request) {
-      return func.call(null, request, opts)
+      return func(request, opts)
     })
 
     return results.length === 1 ? results[0] : results
