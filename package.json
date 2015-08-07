@@ -1,9 +1,9 @@
 {
-  "version": "1.16.10",
+  "version": "1.16.4",
   "name": "httpsnippet-fsless",
   "description": "HTTP Request snippet generator for *most* languages without using node-fs",
-  "author": "Abhijit Kane, abhijit@getpostman.com",
-  "homepage": "https://github.com/postmanlabs/httpsnippet",
+  "author": "Nicolas Baptiste, nbaptiste-ext@restlet.com",
+  "homepage": "https://github.com/restlet/httpsnippet",
   "license": "MIT",
   "main": "./src/index.js",
   "bin": "./bin/httpsnippet",
@@ -43,10 +43,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/postmanlabs/httpsnippet"
+    "url": "https://github.com/restlet/httpsnippet"
   },
   "bugs": {
-    "url": "https://github.com/postmanlabs/httpsnippet/issues"
+    "url": "https://github.com/restlet/httpsnippet/issues"
   },
   "scripts": {
     "test": "standard && mocha --no-timeouts --reporter spec --fgrep 'Request Validation' --invert",
