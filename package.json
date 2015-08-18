@@ -76,7 +76,7 @@
     "debug": "^2.2.0",
     "event-stream": "^3.3.1",
     "folderify": "^0.6.0",
-    "form-data": "^0.2.0",
+    "form-data": "^1.0.0-rc3",
     "har-validator-fsless": "^1.6.1"
   }
 }
