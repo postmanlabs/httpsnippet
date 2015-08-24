@@ -15,14 +15,15 @@ var data = JSON.stringify({
     {
       "arr_mix_nested": {}
     }
-  ]
+  ],
+  "boolean": false
 });
 
 var xhr = new XMLHttpRequest();
 xhr.withCredentials = true;
 
 xhr.addEventListener("readystatechange", function () {
-  if (this.readyState === this.DONE) {
+  if (this.readyState === 4) {
     console.log(this.responseText);
   }
 });
