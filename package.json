@@ -69,6 +69,6 @@
     "folderify": "^0.7.0",
     "form-data": "^0.2.0",
     "har-validator-fsless": "1.6.6",
-    "postman-collection": "3.0.8"
+    "postman-collection": "3.5.1"
   }
 }
